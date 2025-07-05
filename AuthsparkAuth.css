@@ -1,0 +1,238 @@
+.authspark-auth-container {
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.authspark-auth-container.dark {
+  color: #f8fafc;
+}
+
+.authspark-auth-container.light {
+  color: #1e293b;
+}
+
+.authspark-auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 12px;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.authspark-auth-container.light .authspark-auth-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.authspark-auth-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.authspark-auth-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.authspark-auth-logo-icon {
+  width: 32px;
+  height: 32px;
+  color: #3b82f6;
+}
+
+.authspark-auth-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(to right, #3b82f6, #6366f1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.authspark-auth-subtitle {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.authspark-auth-container.light .authspark-auth-subtitle {
+  color: #64748b;
+}
+
+.authspark-auth-toggle {
+  display: flex;
+  background: rgba(30, 41, 59, 0.5);
+  border-radius: 8px;
+  padding: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.authspark-auth-container.light .authspark-auth-toggle {
+  background: rgba(226, 232, 240, 0.7);
+}
+
+.authspark-auth-toggle-btn {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.authspark-auth-toggle-btn.active {
+  color: #f8fafc;
+  background: rgba(59, 130, 246, 0.2);
+}
+
+.authspark-auth-container.light .authspark-auth-toggle-btn.active {
+  color: #1e293b;
+  background: rgba(59, 130, 246, 0.15);
+}
+
+.authspark-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.authspark-auth-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1px;
+
+}
+
+.authspark-auth-input-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #e2e8f0;
+}
+
+.authspark-auth-container.light .authspark-auth-input-label {
+  color: #475569;
+}
+
+.authspark-auth-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #f8fafc;
+  font-size: 0.95rem;
+}
+
+.authspark-auth-container.light .authspark-auth-input {
+  background: rgba(226, 232, 240, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #1e293b;
+}
+
+.authspark-auth-input::placeholder {
+  color: #94a3b8;
+}
+
+.authspark-auth-hint {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin: 0.25rem 0 0;
+}
+
+.authspark-auth-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.authspark-auth-remember {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e2e8f0;
+}
+
+.authspark-auth-container.light .authspark-auth-remember {
+  color: #475569;
+}
+
+.authspark-auth-remember input {
+  accent-color: #3b82f6;
+}
+
+.authspark-auth-forgot {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.authspark-auth-submit {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(to right, #3b82f6, #6366f1);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.authspark-auth-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.authspark-auth-spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: authspark-auth-spin 1s ease-in-out infinite;
+}
+
+@keyframes authspark-auth-spin {
+  to { transform: rotate(360deg); }
+}
+
+.authspark-auth-switch {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.875rem;
+  margin: 1rem 0 0;
+}
+
+.authspark-auth-switch-btn {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0 0.25rem;
+  margin-left: 0.25rem;
+}
+
+.authspark-auth-error {
+  color: #ff4c4c;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
