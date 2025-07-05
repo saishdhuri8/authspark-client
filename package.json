@@ -22,9 +22,5 @@
     "authspark"
   ],
   "author": "Saish Dhuri",
-  "license": "MIT",
-  "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
-  }
+  "license": "MIT"
 }
