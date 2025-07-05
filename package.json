@@ -1,6 +1,6 @@
 {
   "name": "authspark-client",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Authspark is a plug-and-play authentication and user management system designed for developers. With just a few lines of integration, it enables seamless email-password login/signup, real-time active user tracking, user metadata management, and project-specific user insights — all backed by a simple, customizable React component and secure API. Perfect for SaaS platforms or internal tools that need quick and reliable user auth without building everything from scratch.",
   "main": "index.js",
   "exports": {
