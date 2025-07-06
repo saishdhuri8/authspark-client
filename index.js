@@ -1,3 +1,2 @@
-export { AuthsparkAuthProvider } from "./AuthsparkAuthProvider";
-export { useUser } from "./AuthsparkAuthProvider";
-export { AuthsparkAuth } from "./AuthsparkAuth"
+export { AuthsparkAuthProvider, useUser } from "./AuthsparkAuthProvider.jsx";
+export { default as AuthsparkAuth } from "./AuthsparkAuth.jsx";
