@@ -1,2 +1,3 @@
-export  { AuthsparkAuthProvider } from "./AuthsparkAuthProvider";
-export  { useUser } from "./AuthsparkAuthProvider";
+export { AuthsparkAuthProvider } from "./AuthsparkAuthProvider";
+export { useUser } from "./AuthsparkAuthProvider";
+export { AuthsparkAuth } from "./AuthsparkAuth"
